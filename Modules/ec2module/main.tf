@@ -11,7 +11,7 @@ data "aws_ami" "app_ami" {
 resource "aws_instance" "ec2" {
   ami             = data.aws_ami.app_ami.id
   instance_type   = var.instancetype
-  key_name        = "devops-mozka"
+  key_name        = var.key-pairs
   security_groups = ["${aws_security_group.sg.name}"]
   tags            = var.aws_name_tag
 
@@ -24,7 +24,7 @@ resource "aws_instance" "ec2" {
     connection {
       type        = "ssh"
       user        = "ec2-user"
-      private_key = file("./devops-mozka.pem")
+      private_key = file(var.private-key)
       host        = self.public_ip
     }
   }
