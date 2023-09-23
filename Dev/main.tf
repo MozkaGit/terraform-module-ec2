@@ -17,4 +17,8 @@ module "ec2-module" {
   instancetype = var.instancetype
 
   aws_name_tag = var.aws_name_tag
+
+  key-pairs = var.key-pairs
+
+  private-key = var.private-key
 }
