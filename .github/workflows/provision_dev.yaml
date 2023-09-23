@@ -29,3 +29,8 @@ jobs:
           terraform validate
           terraform plan 
           terraform apply -auto-approve
+      - name: Terraform Destroy
+        id:   destroy
+        run: |
+          cd Dev/
+          terraform destroy -auto-approve
