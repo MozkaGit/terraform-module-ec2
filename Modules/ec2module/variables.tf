@@ -4,6 +4,14 @@ variable "instancetype" {
 
 variable "aws_name_tag" {
   default = {
-    Name = "ec2-mozka"
+    Name = "NULL"
   }
+}
+
+variable "key-pairs" {
+  default = "NULL"
+}
+
+variable "private-key" {
+  default = "NULL"
 }
