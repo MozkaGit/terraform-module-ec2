@@ -1,4 +1,4 @@
-# Terraform EC2 Infrastructure"
+# Terraform EC2 Infrastructure"<br>[![Provision Dev infra](https://github.com/MozkaGit/terraform-module-ec2/actions/workflows/provision_dev.yaml/badge.svg)](https://github.com/MozkaGit/terraform-module-ec2/actions/workflows/provision_dev.yaml) [![Provision Prod infra](https://github.com/MozkaGit/terraform-module-ec2/actions/workflows/provision_prod.yaml/badge.svg)](https://github.com/MozkaGit/terraform-module-ec2/actions/workflows/provision_prod.yaml)</br>
 
 This project uses Terraform to deploy an infrastructure on AWS. The goal is to deploy this infrastructure as a module to two environments: Prod and Dev. Each environment has its own variables.
 
